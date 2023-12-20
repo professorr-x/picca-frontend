@@ -28,7 +28,7 @@ export function NavHandlers({
           About
         </Link>
       </li>
-      <li className="border-b-2 border-zinc-300 w-full">
+      {/* <li className="border-b-2 border-zinc-300 w-full">
         <Link
           onClick={handleClose}
           to="support"
@@ -60,19 +60,7 @@ export function NavHandlers({
         >
           Pricing
         </Link>
-      </li>
-
-      <div className="flex flex-col my-4">
-        <button
-          type="button"
-          className="bg-transparent text-indigo-700 px-8 py-3 mb-4"
-        >
-          Sign In
-        </button>
-        <button type="button" className="px-8 py-3 bg-indigo-700">
-          Sign Up
-        </button>
-      </div>
+      </li> */}
     </ul>
   );
 }

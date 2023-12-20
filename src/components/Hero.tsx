@@ -1,6 +1,6 @@
 import { CloudUpload, Database, PaperAirplane, Server } from "heroicons-react";
 import uuid from "react-uuid";
-import { HeroDataServices } from "./HeroDataServices";
+// import { HeroDataServices } from "./HeroDataServices";
 import { HeroHeading } from "./HeroHeading";
 import { HeroImage } from "./HeroImage";
 
@@ -23,12 +23,12 @@ export default function Hero(): JSX.Element {
   return (
     <div
       id="home"
-      className="w-full h-screen bg-zinc-200 flex flex-col justify-between"
+      className="w-full h-screen flex flex-col justify-between bg-[rgb(10,17,10)]"
     >
-      <div className="grid md:grid-cols-2 max-w-[1280px] m-auto">
+      <div className="grid md:grid-cols-2 max-w-[1280px] m-auto ">
         <HeroHeading />
         <HeroImage />
-        <HeroDataServices />
+        {/* <HeroDataServices /> */}
       </div>
     </div>
   );
