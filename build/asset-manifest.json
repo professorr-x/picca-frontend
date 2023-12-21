@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/cloud-landing-page/static/css/main.cc156a6c.css",
+    "main.js": "/cloud-landing-page/static/js/main.f4c47e55.js",
+    "static/media/mosque-window.jpg": "/cloud-landing-page/static/media/mosque-window.5fdab05c2256a08bc17d.jpg",
+    "index.html": "/cloud-landing-page/index.html",
+    "main.cc156a6c.css.map": "/cloud-landing-page/static/css/main.cc156a6c.css.map",
+    "main.f4c47e55.js.map": "/cloud-landing-page/static/js/main.f4c47e55.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc156a6c.css",
+    "static/js/main.f4c47e55.js"
+  ]
+}
