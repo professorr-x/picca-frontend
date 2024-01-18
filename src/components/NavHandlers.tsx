@@ -28,6 +28,17 @@ export function NavHandlers({
           About
         </Link>
       </li>
+      <li className="border-b-2 border-zinc-300 w-full">
+        <Link
+          onClick={handleClose}
+          to="anbi"
+          smooth
+          offset={-500}
+          duration={500}
+        >
+          ANBI
+        </Link>
+      </li>
       {/* <li className="border-b-2 border-zinc-300 w-full">
         <Link
           onClick={handleClose}

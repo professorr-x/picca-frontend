@@ -1,6 +1,7 @@
 // import uuid from "react-uuid";
 // import { AboutMappedData } from "./AboutMappedData";
 import { AboutText } from "./AboutText";
+import BoardMembers from "./BoardMembers";
 
 /* about component */
 function About(): JSX.Element {
@@ -31,6 +32,7 @@ function About(): JSX.Element {
       <div className="max-w-[1280px] mx-auto">
         <AboutText />
         {/* <AboutMappedData mappedData={mappedData} /> */}
+        <BoardMembers/>
       </div>
     </div>
   );
