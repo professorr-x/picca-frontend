@@ -31,9 +31,21 @@ export default function Footer(): JSX.Element {
         {FooterEmail()}
       </div> */}
       <div className="text-gray-300 px-2 py-4 leading-8">
-        <h1>Pakistaanse Islamitisch Cultureel Centrum Almere</h1>
+        <h1>Naam: Stichting Pakistaanse Islamitisch Cultureel Centrum Almere </h1><br></br>
+
+        <p>Adres: Markerkant 12 12, 06 01 </p>
+        <p>Woonplaats: 1314AK ALMERE </p><br></br>
+
+        <p>RSIN: 865712013 </p>
+        <p>K.v.K: 91612683 </p><br></br>
+
+        <p>Contactpersoon: S.Ahmed </p>
+        <p>Emailadres: piccalmere@gmail.com </p><br></br>
+
+        <p>Mobiel: 0622412770 </p><br></br>
+        {/* <h1>Pakistaanse Islamitisch Cultureel Centrum Almere</h1>
         <p>Markerkant 120601, 1314 AK Almere</p>
-        <p>T: 06 55955402</p>
+        <p>T: 06 55955402</p> */}
       </div>
 
 

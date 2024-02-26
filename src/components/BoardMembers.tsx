@@ -16,14 +16,14 @@ const Members: Member[] = [
 
 const MemberCard = ({ name, role }: Member): JSX.Element => {
     return (
-        <Card color="transparent" shadow={false} className="w-full max-w-[26rem] mx-4">
+        <Card color="transparent" shadow={false} className="w-full max-w-[18rem] mx-4">
             <div className="flex w-full flex-col gap-0.5 border border-stone-600 rounded p-8">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-center">
                     <Typography variant="h5" color="blue-gray">
                         {name}
                     </Typography>
                 </div>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-center">
                     <Typography color="blue-gray">
                         {role}
                     </Typography>
@@ -39,7 +39,7 @@ const BoardMembers = (): JSX.Element => {
             <h2 className="sm:text-5xl text-2xl font-bold mx-1 mt-52">
                 MAAK KENNIS MET HET BESTUUR
             </h2>
-            <div className="flex mt-28 mx-auto">
+            <div className="flex mt-28 mx-auto justify-center">
                 {Members.map((member, index) => (
                     <MemberCard key={index} name={member.name} role={member.role} />
                 ))}
