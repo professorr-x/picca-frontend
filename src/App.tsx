@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Beleidsplan from "./components/Beleidsplan";
+import Contact from "./components/Contact";
 
 /* main app entry */
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
           </>
         } />
         <Route path="/beleidsplan" element={<Beleidsplan />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
