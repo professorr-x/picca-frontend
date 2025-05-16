@@ -2,12 +2,12 @@
 import prayerImage from "../assets/taliwang-mengaji-f7WXRX4FHNo-unsplash.jpg";
 
 const prayerData = [
-  { name: "Fajr", azan: "03:30 am", prayer: "04:30 Am" },
-  { name: "Zohar", azan: "01:00 pm", prayer: "01:15 Pm" },
-  { name: "Asar", azan: "05:10 pm", prayer: "05:10 Pm" },
-  { name: "Maghrib", azan: "06:50 pm", prayer: "07:00 Pm" },
-  { name: "Isha", azan: "08:25 pm", prayer: "08:45 Pm" },
-  { name: "Jumah", azan: "12:30 pm", prayer: "01:30 Pm" },
+  { name: "Fajr", prayer: "05:15" },
+  { name: "Zohar", prayer: "14:00" },
+  { name: "Asar", prayer: "19:00" },
+  { name: "Maghrib", prayer: "09:33" },
+  { name: "Isha", prayer: "22:50" },
+  { name: "Jumah", prayer: "14:00" },
 ];
 
 export default function PrayerTiming(): JSX.Element {
@@ -19,13 +19,11 @@ export default function PrayerTiming(): JSX.Element {
           <div className="bg-[#FFF7EA] rounded-lg p-6">
             <div className="grid grid-cols-3 gap-4 mb-4">
               <span className="font-bold">Name Of Salat</span>
-              <span className="font-bold text-center">Azan Time</span>
               <span className="font-bold text-right">Prayer Time</span>
             </div>
             {prayerData.map((prayer) => (
               <div key={prayer.name} className="grid grid-cols-3 gap-4 py-2 border-b border-dotted border-gray-300">
                 <span className="text-gray-600">{prayer.name}</span>
-                <span className="text-gray-600 text-center">{prayer.azan}</span>
                 <span className="text-gray-600 text-right">{prayer.prayer}</span>
               </div>
             ))}
