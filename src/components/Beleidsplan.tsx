@@ -1,5 +1,5 @@
 
-import mosqueImg from "../assets/mosque-window.jpg";
+import mosqueImg from "../assets/taliwang-mengaji-f7WXRX4FHNo-unsplash.jpg";
 
 export default function Beleidsplan(): JSX.Element {
   return (
@@ -16,19 +16,6 @@ export default function Beleidsplan(): JSX.Element {
       </div>
       
       <div className="max-w-4xl mx-auto px-6 py-20 space-y-16">
-        <section className="transform hover:scale-105 transition-transform duration-300 bg-white rounded-lg shadow-lg p-8 space-y-6">
-          <h2 className="text-3xl font-semibold text-gray-900 border-b-2 border-indigo-500 pb-2 inline-block">Doelstellingen</h2>
-          <ul className="text-lg text-gray-700 space-y-3 list-disc pl-6">
-            <li>Het geven van onderricht in de Islam.</li>
-            <li>Het geven van voorlichting over de Islam aan andere organisaties en natuurlijke personen.</li>
-            <li>Het verrichten van sociaal, cultureel en maatschappelijk werk.</li>
-            <li>Het bevorderen van de participatie onder moslims in Nederland.</li>
-            <li>Het adviseren van beleid met regeringen, overheden en autoriteiten inzake moslims.</li>
-            <li>Het ondersteunen van groepen en organisaties van moslims.</li>
-            <li>Het bevorderen van de studie in de Islam.</li>
-          </ul>
-        </section>
-
         <section className="transform hover:scale-105 transition-transform duration-300 bg-white rounded-lg shadow-lg p-8 space-y-6">
           <h2 className="text-3xl font-semibold text-gray-900 border-b-2 border-indigo-500 pb-2 inline-block">De Stichting tracht haar doelen te bereiken</h2>
           <ul className="text-lg text-gray-700 space-y-3 list-disc pl-6">
