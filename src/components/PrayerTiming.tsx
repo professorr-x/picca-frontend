@@ -1,5 +1,5 @@
 
-import prayerImage from "../assets/mosque-window.jpg";
+import prayerImage from "../assets/taliwang-mengaji-f7WXRX4FHNo-unsplash.jpg";
 
 const prayerData = [
   { name: "Fajr", azan: "03:30 am", prayer: "04:30 Am" },
