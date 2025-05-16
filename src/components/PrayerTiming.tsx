@@ -15,16 +15,16 @@ export default function PrayerTiming(): JSX.Element {
     <div className="w-full py-16 px-4 bg-white">
       <div className="max-w-[1280px] mx-auto grid md:grid-cols-2 gap-8">
         <div className="flex flex-col justify-center">
-          <h2 className="text-4xl font-bold mb-4">Prayer Timing</h2>
-          <div className="bg-[#FFF7EA] rounded-lg p-6">
-            <div className="grid grid-cols-3 gap-4 mb-4">
-              <span className="font-bold">Name Of Salat</span>
-              <span className="font-bold text-right">Prayer Time</span>
+          <h2 className="text-4xl font-bold mb-6">Prayer Timing</h2>
+          <div className="bg-[#FFF7EA] rounded-lg p-8">
+            <div className="grid grid-cols-2 gap-4 mb-6 border-b-2 border-gray-200 pb-4">
+              <span className="font-bold text-lg">Name Of Salat</span>
+              <span className="font-bold text-lg text-right">Prayer Time</span>
             </div>
             {prayerData.map((prayer) => (
-              <div key={prayer.name} className="grid grid-cols-3 gap-4 py-2 border-b border-dotted border-gray-300">
-                <span className="text-gray-600">{prayer.name}</span>
-                <span className="text-gray-600 text-right">{prayer.prayer}</span>
+              <div key={prayer.name} className="grid grid-cols-2 gap-4 py-3 border-b border-gray-200 last:border-0">
+                <span className="text-gray-700">{prayer.name}</span>
+                <span className="text-gray-700 text-right">{prayer.prayer}</span>
               </div>
             ))}
           </div>
