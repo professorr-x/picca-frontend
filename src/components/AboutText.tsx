@@ -21,8 +21,8 @@ export function AboutText(): JSX.Element {
       </h1>
       <div className="w-full max-w-4xl mx-auto my-8">
         <img 
-          src={require("../assets/prayer-gathering.jpg")} 
-          alt="Community Prayer" 
+          src={require("../assets/community-prayer.jpg")} 
+          alt="Community Prayer During Service" 
           className="w-full h-[400px] object-cover rounded-lg shadow-lg"
         />
       </div>
