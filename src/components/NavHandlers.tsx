@@ -18,13 +18,7 @@ export function NavHandlers({
         </Link>
       </li>
       <li className="border-b-2 border-zinc-300 w-full">
-        <Link
-          onClick={handleClose}
-          to="about"
-          smooth
-          offset={-200}
-          duration={500}
-        >
+        <Link onClick={handleClose} to="/beleidsplan">
           About
         </Link>
       </li>

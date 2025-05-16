@@ -1,9 +1,9 @@
-import { Link } from "react-scroll";
 
-/* button in navbar */
+import { Link } from "react-router-dom";
+
 export function NavbarLinksAbout(): JSX.Element {
   return (
-    <Link to="about" smooth offset={-200} duration={500}>
+    <Link to="/beleidsplan" className="hover:text-indigo-600">
       About
     </Link>
   );
