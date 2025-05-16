@@ -19,6 +19,13 @@ export function AboutText(): JSX.Element {
       <h1 className="sm:text-5xl text-2xl font-bold mx-1 mt-52">
         Doelstellingen
       </h1>
+      <div className="w-full max-w-4xl mx-auto my-8">
+        <img 
+          src={require("../assets/prayer-gathering.jpg")} 
+          alt="Community Prayer" 
+          className="w-full h-[400px] object-cover rounded-lg shadow-lg"
+        />
+      </div>
 
       <ul className="sm:text-3xl py-6 text-gray-500 px-5 sm:px-4 md:px-3 lg:px-2 xl:px-1">
         <li>
