@@ -4,11 +4,11 @@ import mosqueImg from "../assets/taliwang-mengaji-f7WXRX4FHNo-unsplash.jpg";
 export default function Beleidsplan(): JSX.Element {
   return (
     <div className="w-full min-h-screen bg-white">
-      <div className="relative h-[40vh] overflow-hidden">
+      <div className="relative h-[60vh] overflow-hidden">
         <img
           src={mosqueImg}
           alt="Mosque Interior"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <h1 className="text-5xl font-bold text-white">Beleidsplan</h1>
