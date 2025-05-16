@@ -1,8 +1,10 @@
-import { Link } from "react-scroll";
 
-/* button in navbar */
+import { Link } from "react-router-dom";
+
 export function NavbarLinksHome(): JSX.Element {
-  return <Link to="home" smooth duration={500}>
-    Home
-  </Link>;
+  return (
+    <Link to="/" className="hover:text-indigo-600">
+      Home
+    </Link>
+  );
 }
