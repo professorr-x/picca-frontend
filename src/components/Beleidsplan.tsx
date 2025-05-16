@@ -1,12 +1,12 @@
 
-import React from 'react';
+import mosqueImg from "../attached_assets/taliwang-mengaji-f7WXRX4FHNo-unsplash.jpg";
 
 export default function Beleidsplan(): JSX.Element {
   return (
     <div className="w-full min-h-screen bg-white">
       <div className="relative h-[40vh] overflow-hidden">
         <img
-          src="/attached_assets/taliwang-mengaji-f7WXRX4FHNo-unsplash.jpg"
+          src={mosqueImg}
           alt="Mosque Interior"
           className="w-full h-full object-cover"
         />
