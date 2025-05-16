@@ -1,52 +1,66 @@
-import {
-    Card,
-    Typography,
-} from "@material-tailwind/react";
+
+import { Card, Typography } from "@material-tailwind/react";
+import { FaUser } from 'react-icons/fa';
+import { HiMail } from 'react-icons/hi';
+import { BsCoin } from 'react-icons/bs';
 
 interface Member {
     name: string;
     role: string;
+    icon: JSX.Element;
 }
 
 const Members: Member[] = [
-    { "name": "Saeed Ahmed", "role": "Voorzitter" },
-    { "name": "Amanat Kayani Mohammad", "role": "Secretaris" },
-    { "name": "Sohail Joya", "role": "Penningmeester" },
-]
+    { 
+        name: "Saeed Ahmed", 
+        role: "Voorzitter",
+        icon: <FaUser className="w-12 h-12 text-blue-700" />
+    },
+    { 
+        name: "Amanat Kayani Mohammad", 
+        role: "Secretaris",
+        icon: <HiMail className="w-12 h-12 text-green-600" />
+    },
+    { 
+        name: "Sohail Joya", 
+        role: "Penningmeester",
+        icon: <BsCoin className="w-12 h-12 text-blue-400" />
+    },
+];
 
-const MemberCard = ({ name, role }: Member): JSX.Element => {
+const MemberCard = ({ name, role, icon }: Member): JSX.Element => {
     return (
         <Card color="transparent" shadow={false} className="w-full max-w-[18rem] mx-4">
-            <div className="flex w-full flex-col gap-0.5 border border-stone-600 rounded p-8">
+            <div className="flex w-full flex-col items-center gap-4 border border-gray-200 rounded-lg p-8 bg-white">
                 <div className="flex items-center justify-center">
-                    <Typography variant="h5" color="blue-gray">
+                    {icon}
+                </div>
+                <div className="text-center">
+                    <Typography variant="h5" color="blue-gray" className="mb-1">
                         {name}
                     </Typography>
-                </div>
-                <div className="flex items-center justify-center">
-                    <Typography color="blue-gray">
+                    <Typography color="gray" className="font-normal">
                         {role}
                     </Typography>
                 </div>
             </div>
         </Card>
-    )
-}
+    );
+};
 
 const BoardMembers = (): JSX.Element => {
     return (
         <div className="text-center">
-            <h2 className="sm:text-5xl text-2xl font-bold mx-1 mt-52">
+            <h2 className="text-5xl font-bold mb-16">
                 MAAK KENNIS MET HET BESTUUR
             </h2>
-            <div className="flex mt-28 mx-auto justify-center">
+            <div className="flex flex-wrap justify-center gap-8">
                 {Members.map((member, index) => (
-                    <MemberCard key={index} name={member.name} role={member.role} />
+                    <MemberCard key={index} {...member} />
                 ))}
             </div>
-
         </div>
-    )
-}
+    );
+};
 
 export default BoardMembers;
