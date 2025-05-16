@@ -1,5 +1,5 @@
 
-import mosqueImg from "../attached_assets/taliwang-mengaji-f7WXRX4FHNo-unsplash.jpg";
+import mosqueImg from "../assets/taliwang-mengaji-f7WXRX4FHNo-unsplash.jpg";
 
 export default function Beleidsplan(): JSX.Element {
   return (
